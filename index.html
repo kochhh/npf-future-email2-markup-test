@@ -13,7 +13,6 @@
     <title>НПФ «БУДУЩЕЕ»</title>
     <style type="text/css">
       @font-face { font-family: "Arial Black"; src: local("Arial Black"), local("Arial-Black"), url("arial-black-webfont.woff2") format("woff2"), url("arial-black-webfont.woff") format("woff"); font-weight: normal; font-style: normal; font-display: swap; }
-      @font-face { font-family: Circe; src: url("circe-light-webfont.woff2") format("woff2"), url("circe-light-webfont.woff") format("woff"); font-weight: 300; font-style: normal; font-display: swap; }
       :root { color-scheme: light dark; supported-color-schemes: light dark; }
       .ExternalClass { width: 100%; }
       .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
@@ -29,12 +28,11 @@
       }
       @media only screen and (max-width: 599.98px) {
         .container { width: 100% !important; }
+        .login-title { display: none !important; }
         .head-cell { display: block !important; width: 100% !important; }
-        .head-cell--left { padding: 20px 0 20px 0 !important; }
-        .head-cell--right { padding: 0 !important; }
+        .head-right-wrapper { height: auto !important; }
         .head-right-top { display: none !important; }
         .head-right-bottom { text-align: left !important; padding: 0 0 10px 16px !important; }
-        .steps-head-cell { display: block !important; width: 100% !important; text-align: left !important; }
         .arrow-cell { display: none !important; }
         .steps-cell { display: block !important; width: 100% !important; }
         .steps-cell-wrapper { height: auto !important; }
@@ -43,8 +41,9 @@
         .steps-cell--1 .steps-cell-inner { padding: 16px 16px 0 16px !important; }
         .steps-cell--4 { display: none !important; }
         .advantages-cell { display: block !important; width: 100% !important; padding: 0 0 16px 0 !important; }
-        .advantages-cell:last-child { padding: 0 !important; }
         .advantages-cell-wrapper { height: auto !important; }
+        .link-cell { padding: 22px 16px 28px 16px !important; }
+        .takepart-cell { padding: 16px 16px 16px 16px !important; }
       }
       @media only screen and (max-width: 519.98px) {
         .container-cell { padding: 0 16px 0 16px !important; }
@@ -68,7 +67,7 @@
   </head>
   <body bgcolor="#FFFFFE" class="body" style="margin: 0; padding: 0; width: 100%; word-break: break-word; font-family: Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 14px; line-height: 15px; background: #FFFFFE; color: #001A4B;">
     <div style="max-height: 0; overflow: hidden; mso-hide: all;" aria-hidden="true">
-      Получите бонус от Фонда 2000₽
+      Получите бонус от Фонда 2000₽. Переведите свои пенсионные накопления в программу долгосрочных сбережений
     </div>
     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" lang="ru" style="border-collapse: collapse;">
       <tr>
@@ -78,36 +77,73 @@
               <td align="center">
                 <table role="presentation" class="container" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
                   <tr>
+                    <td style="padding: 8px 16px 8px 16px;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                        <tr>
+                          <td>
+                            <a href="https://npff.ru/promo2000/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_logo" target="_blank" style="text-decoration: none;">
+                              <img src="logo@2x.png" alt="Пенсионный фонд «БУДУЩЕЕ»" width="120" height="48" style="display: block;" />
+                            </a>
+                          </td>
+                          <td align="right">
+                            <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                              <tr>
+                                <td>
+                                  <a href="tel:88001234567" target="_blank" style="display: inline-block; text-decoration: none; font-size: 12px; line-height: 20px; color: #001A4B; letter-spacing: -0.4px; white-space: nowrap;">
+                                    <img src="smartphone@2x.png" alt="" width="20" height="20" style="vertical-align: middle;" />
+                                    <span style="vertical-align: middle;">8 800 123 45 67</span>
+                                  </a>
+                                </td>
+                                <td style="padding: 0 0 0 16px;">
+                                  <a href="https://lk.npff.ru/auth/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_cabinet" target="_blank" style="display: inline-block; text-decoration: none; border: 1px solid #0085FF; border-radius: 6px; padding: 7px 16px 7px 16px; font-size: 12px; font-weight: bold; line-height: 24px; color: #0085FF; letter-spacing: -0.3px; white-space: nowrap;">
+                                    <img src="login@2x.png" alt="" width="24" height="24" style="vertical-align: middle;" />
+                                    <span class="login-title" style="vertical-align: middle;">Личный кабинет</span>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <table role="presentation" class="container" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+                  <tr>
                     <td align="left">
                       <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                         <tr>
                           <td>
-                            <div style="background: #2565FF right bottom / 100% 100% no-repeat url('head-bg.jpg'); background-color: #2565FF; background-position: right bottom; background-size: 100% 100%; background-repeat: no-repeat; color: #FFFFFE; border-radius: 0 0 8px 8px;">
+                            <div style="background: #2565FF right bottom / 100% 100% no-repeat url('head-bg.jpg'); background-image: url('head-bg.jpg'); background-color: #2565FF; background-position: right bottom; background-size: 100% 100%; background-repeat: no-repeat; color: #FFFFFE; border-radius: 0 0 8px 8px;">
                               <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                 <tr>
-                                  <td class="head-cell head-cell--left" width="350" valign="top" style="padding: 27px 0 16px 0;">
+                                  <td class="head-cell head-cell--left" width="350" valign="top">
                                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                       <tr>
-                                        <td style="padding: 0 16px 5px 16px; font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 20.9px; line-height: 20.9px;">
-                                          Получите бонус от&nbsp;Фонда
+                                        <td style="padding: 27px 16px 5px 16px; font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 20.9px; line-height: 20.9px;">
+                                          Получите бонус от&nbsp;Фонда <div style="width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;">2000₽</div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td style="padding: 130px 16px 23px 16px; font-size: 16px; line-height: 16px; background: left top / 322px auto no-repeat url('2000@2x.png'); background-image: url('2000@2x.png'); background-position: left top; background-size: 322px auto; background-repeat: no-repeat;">
+                                        <td style="padding: 130px 16px 23px 16px; font-size: 16px; line-height: 16px; background: left top / 322px auto no-repeat url('2000@2x.png'); background-image: url('2000@2x.png'); background-position: left top; background-size: 322px auto; background-repeat: no-repeat; position: relative;">
                                           <span style="opacity: 0.8;">Переведите свои пенсионные накопления в&nbsp;программу долгосрочных сбережений</span>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td style="padding: 0 16px 0 16px;">
+                                        <td style="padding: 0 16px 16px 16px;">
                                           <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
                                             <tr>
                                               <td style="padding: 0 8px 0 0;">
-                                                <a href="#" target="_blank" style="display: block; text-decoration: none; border: 0.5px solid #FFFFFE; background: #FFFFFE; color: #001A4B; padding: 8px 16px 8px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px;">
+                                                <a href="https://lk.npff.ru/auth/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_take" target="_blank" style="display: block; text-decoration: none; border: 0.5px solid #FFFFFE; background: #FFFFFE; color: #001A4B; padding: 8px 16px 8px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px; mso-padding-alt: 0;">
                                                   Получить бонус
                                                 </a>
                                               </td>
                                               <td>
-                                                <a href="#" target="_blank" style="display: block; text-decoration: none; border: 0.5px solid #FFFFFE; background: transparent; color: #FFFFFE; padding: 8px 16px 8px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px;">
+                                                <a href="https://npff.ru/promo2000/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_terms" target="_blank" style="display: block; text-decoration: none; border: 0.5px solid #FFFFFE; background: transparent; color: #FFFFFE; padding: 8px 16px 8px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px; mso-padding-alt: 0;">
                                                   Условия акции
                                                 </a>
                                               </td>
@@ -117,15 +153,15 @@
                                       </tr>
                                     </table>
                                   </td>
-                                  <td class="head-cell head-cell--right" valign="top" height="100%" style="padding: 27px 0 0 0;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" height="100%" style="border-collapse: collapse;">
+                                  <td class="head-cell head-cell--right" valign="top">
+                                    <table class="head-right-wrapper" role="presentation" cellpadding="0" cellspacing="0" width="100%" height="284" style="border-collapse: collapse;">
                                       <tr>
-                                        <td class="head-right-top" align="right" style="padding: 18px 15px 0 16px;">
+                                        <td class="head-right-top" align="right" valign="top" style="padding: 44px 15px 0 16px;">
                                           <img src="head-image@2x.png" alt="" width="218" height="194" style="display: block;" />
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="head-right-bottom" align="right" style="padding: 26px 25px 10px 16px; font-size: 8.4px; line-height: 10px;">
+                                        <td class="head-right-bottom" align="right" valign="bottom" style="padding: 0 25px 10px 16px; font-size: 8.4px; line-height: 10px;">
                                           <span style="opacity: 0.8;">Срок акции с 02.09.24 по 04.10.24</span>
                                         </td>
                                       </tr>
@@ -149,13 +185,13 @@
                     <td align="left" style="padding: 20px 16px 17px 16px;">
                       <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                         <tr>
-                          <td class="steps-head-cell" style="font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 18px; line-height: 18px; color: #155498;">
+                          <td style="font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 18px; line-height: 18px; color: #155498;">
                             3 шага
                           </td>
                           <td class="arrow-cell">
                             <img src="arrow@2x.png" alt="" width="257" height="7" style="display: block;" />
                           </td>
-                          <td class="steps-head-cell" align="right" style="font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 18px; line-height: 18px; color: #155498;">
+                          <td align="right" style="font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 18px; line-height: 18px; color: #155498;">
                             Для получения бонуса
                           </td>
                         </tr>
@@ -232,7 +268,7 @@
                             <div class="steps-cell-outer" style="background: #2565FF; border-radius: 8px;">
                               <table class="steps-cell-wrapper" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                 <tr>
-                                  <td class="steps-cell-inner" valign="top" style="padding: 16px 8px 18px 8px;">
+                                  <td class="steps-cell-inner" valign="top" style="padding: 16px 16px 18px 16px;">
                                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                       <tr>
                                         <td align="center" style="padding: 0 0 4px 0;">
@@ -246,13 +282,13 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td align="center" style="padding: 0 8px 0 8px; font-size: 12px; line-height: 12px; color: #FFFFFE;">
+                                        <td align="center" style="font-size: 12px; line-height: 12px; color: #FFFFFE;">
                                           Подайте заявление о&nbsp;переводе накопительной пенсии в&nbsp;программу любым из&nbsp;удобных способов:
                                         </td>
                                       </tr>
                                       <tr>
                                         <td style="padding: 13px 0 0 0; font-size: 12px; line-height: 11px; color: #FFFFFE;">
-                                          <ul style="margin: 0; padding: 0 0 0 18px;">
+                                          <ul style="margin: 0; padding: 0 0 0 10px;">
                                             <li style="margin: 0 0 6px 0; opacity: 0.7;">
                                               Онлайн (с&nbsp;помощью сервиса Госключ)
                                             </li>
@@ -267,7 +303,7 @@
                                       </tr>
                                       <tr>
                                         <td align="center" style="padding: 10px 0 0 0;">
-                                          <a href="#" target="_blank" style="display: block; text-decoration: none; background: #D6F65D; color: #001A4B; padding: 7px 16px 7px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px; font-weight: bold; text-align: center;">
+                                          <a href="https://lk.npff.ru/auth/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_take" target="_blank" style="display: block; text-decoration: none; background: #D6F65D; color: #001A4B; padding: 7px 16px 7px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px; font-weight: bold; text-align: center; mso-padding-alt: 0;">
                                             Участвовать
                                           </a>
                                         </td>
@@ -322,7 +358,7 @@
                             <div style="background: #D6F65D; border-radius: 8px; box-shadow: 0 2px 16px #EFEFEF">
                               <table class="advantages-cell-wrapper" role="presentation" cellpadding="0" cellspacing="0" width="100%" height="150" style="border-collapse: collapse;">
                                 <tr>
-                                  <td valign="top" style="padding: 15px 14px 10px 14px;">
+                                  <td valign="top" style="padding: 14px 14px 10px 14px;">
                                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                       <tr>
                                         <td style="font-size: 16px; line-height: 16px; font-weight: bold; color: #001A4B;">
@@ -330,13 +366,13 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td style="padding: 24px 0 5px 0; font-size: 12px; line-height: 19px;">
+                                        <td style="padding: 23px 0 0 0; font-size: 12px; line-height: 19px;">
                                           до&nbsp;<span style="font-family: 'Arial Black', Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 19px; line-height: 19px; letter-spacing: -1px; color: #2565FF">36&nbsp;000&nbsp;₽</span> в&nbsp;год
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td align="center">
-                                          <a href="#" target="_blank" style="display: block; text-decoration: none; background: #FFFFFE; color: #001A4B; padding: 7px 16px 7px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px; font-weight: bold; text-align: center;">
+                                        <td align="center" style="padding: 5px 0 0 0;">
+                                          <a href="https://lk.npff.ru/auth/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_take" target="_blank" style="display: block; text-decoration: none; background: #FFFFFE; color: #001A4B; padding: 7px 16px 7px 16px; border-radius: 2.5px; font-size: 12px; line-height: 14px; font-weight: bold; text-align: center; mso-padding-alt: 0;">
                                             Участвовать
                                           </a>
                                         </td>
@@ -351,7 +387,7 @@
                             <div style="background: #E7EFFC; border-radius: 8px; box-shadow: 0 2px 16px #EFEFEF">
                               <table class="advantages-cell-wrapper" role="presentation" cellpadding="0" cellspacing="0" width="100%" height="150" style="border-collapse: collapse;">
                                 <tr>
-                                  <td valign="top" style="padding: 15px 14px 10px 14px;">
+                                  <td valign="top" style="padding: 14px 14px 10px 14px;">
                                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                       <tr>
                                         <td style="font-size: 16px; line-height: 16px; font-weight: bold; color: #001A4B;">
@@ -373,7 +409,7 @@
                             <div style="background: #E7EFFC; border-radius: 8px; box-shadow: 0 2px 16px #EFEFEF">
                               <table class="advantages-cell-wrapper" role="presentation" cellpadding="0" cellspacing="0" width="100%" height="150" style="border-collapse: collapse;">
                                 <tr>
-                                  <td valign="top" style="padding: 15px 14px 10px 14px;">
+                                  <td valign="top" style="padding: 14px 14px 10px 14px;">
                                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                       <tr>
                                         <td style="font-size: 16px; line-height: 16px; font-weight: bold; color: #001A4B;">
@@ -402,14 +438,19 @@
               <td align="center">
                 <table role="presentation" class="container" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
                   <tr>
-                    <td style="padding: 38px 16px 28px 16px;">
-                      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
-                        <tr>
-                          <td align="center" style="font-size: 12px; line-height: 14px;">
-                            <a href="#" target="_blank" style="color: #2565FF; text-decoration: underline;">Ознакомиться с условиями программы</a>
-                          </td>
-                        </tr>
-                      </table>
+                    <td class="takepart-cell" align="center" style="padding: 38px 16px 38px 16px;">
+                      <a href="https://lk.npff.ru/auth/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_take" target="_blank" style="display: block; max-width: 312px; padding: 16px 0 15px 0; text-decoration: none; font-size: 16px; font-weight: bold; line-height: 20px; background: #2565FF; color: #FFFFFE; border-radius: 2.5px; text-transform: uppercase;">Хочу участвовать в акции</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <table role="presentation" class="container" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+                  <tr>
+                    <td class="link-cell" align="center" style="padding: 0 16px 28px 16px; font-size: 12px; line-height: 14px;">
+                      <a href="https://npff.ru/promo2000/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_terms" target="_blank" style="color: #2565FF; text-decoration: underline;">Ознакомиться с условиями программы</a>
                     </td>
                   </tr>
                 </table>
@@ -419,11 +460,11 @@
               <td align="center" style="background: #F6F6F6;">
                 <table role="presentation" class="container" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
                   <tr>
-                    <td align="left" class="container-cell" style="padding: 0 36px 0 36px;">
+                    <td align="left" class="container-cell" style="padding: 0 50px 0 50px;">
                       <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                         <tr>
-                          <td style="font-family: Circe, Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 5px; line-height: 5.25px; padding: 14px 0 14px 0; color: #7B7B7B;">
-                            Акционерное общество «Негосударственный пенсионный фонд «БУДУЩЕЕ» (АО «НПФ «БУДУЩЕЕ», Фонд). Лицензия ЦБ РФ № 431 от 30.04.2014 г. на осуществление деятельности по пенсионному обеспечению и пенсионному страхованию. ОГРН: 1147799009115 ИНН: 7707492166
+                          <td style="font-size: 10px; line-height: 11px; padding: 14px 0 14px 0; color: #292929;">
+                            <span style="opacity: 0.6;">Акционерное общество «Негосударственный пенсионный фонд «БУДУЩЕЕ» (<a href="https://npff.ru/?utm_source=sent_mail&utm_medium=letter&utm_campaign=ops&utm_content=2000_rub_main_page" target="_blank" style="text-decoration: none; color: #292929;">АО&nbsp;«НПФ&nbsp;«БУДУЩЕЕ»</a>, Фонд). Лицензия ЦБ&nbsp;РФ №&nbsp;431 от&nbsp;30.04.2014&nbsp;г. на&nbsp;осуществление деятельности по&nbsp;пенсионному обеспечению и&nbsp;пенсионному страхованию. ОГРН:&nbsp;1147799009115 ИНН:&nbsp;7707492166</span>
                           </td>
                         </tr>
                       </table>
